@@ -47,7 +47,7 @@ export default function Navbar(){
     }
     return (
         <div className="border-b-2 bg-white border-b-[#EDEBE0]">
-        <div className="mx-auto text-[#222222] font-ponjoung flex w-full max-w-7xl justify-between items-center px-4 py-10 text-xs">
+        <div className="mx-auto text-[#222222] font-ponjoung flex w-screen max-w-7xl justify-between items-center px-4 py-10 text-xs">
             <section className="flex items-center">
                 <Link href={"/"} ><Image src={logo} alt="Logo"/></Link>
             </section>

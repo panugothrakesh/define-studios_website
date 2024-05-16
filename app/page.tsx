@@ -10,11 +10,11 @@ export default function Home() {
       <div>
           <Image src={photo1} width={100} height={100} className="w-screen h-full" alt=" "/>
         </div>
-        <Balancer>
-          <p className="text-center font-haboro text-sm py-24">
-            Flamingo creates a lifestyle of beauty and balance with spaces and products that reflect a blend of <br /> functionality, aesthetics and innovative technology.
+          <p className="text-center font-haboro text-sm py-24 leading-loose tracking-wide">
+            <Balancer>
+              Flamingo creates a lifestyle of beauty and balance with spaces and products that reflect a blend of <br /> functionality, aesthetics and innovative technology.
+            </Balancer>
           </p>
-        </Balancer>
         <Expanded/>
     </div>
   </>  

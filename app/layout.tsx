@@ -12,6 +12,9 @@ const ponjoung = localFont({src:[{path: "../font/Ponjoung.otf"}], variable: '--f
 export const metadata: Metadata = {
   title: "DF9 | Define Studios",
   description: "Define Studios",
+  icons: {
+    icon: "/icon.ico",
+  },
 };
 
 export default function RootLayout({
