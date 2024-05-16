@@ -21,12 +21,12 @@ export default function Expanded(){
                         </div>
                     </div>
                     <div className="right flex justify-end">
-                        <Image className="flex justify-end items-end h-[65vw] right-0 w-[38vw] object-cover"src={portfolio} alt="" height={100} width={100}/>
+                        <Image className="flex justify-end items-end h-[56vw] right-0 w-[38vw] object-cover"src={portfolio} alt="" height={100} width={100}/>
                     </div>
                 </div>
                 <div className="righttt grid grid-cols-2 justify-between w-screen px-24">
                     <div className="right flex justify-start w-full">
-                        <Image className="flex justify-end items-end left-0 h-[65vw] w-[38vw] object-cover" src={about} alt="" height={100} width={100}/>
+                        <Image className="flex justify-end items-end left-0 h-[56vw] w-[38vw] object-cover" src={about} alt="" height={100} width={100}/>
                     </div>
                     <div className="left flex flex-col justify-center items-start">
                         <div className="flex flex-col gap-2">
@@ -47,12 +47,12 @@ export default function Expanded(){
                         </div>
                     </div>
                     <div className="right flex justify-end">
-                        <Image className="flex justify-end items-end right-0 h-[65vw] w-[38vw] object-cover" src={press} alt="" height={100} width={100}/>
+                        <Image className="flex justify-end items-end right-0 h-[56vw] w-[38vw] object-cover" src={press} alt="" height={100} width={100}/>
                     </div>
                 </div>
                 <div className="righttt grid grid-cols-2 justify-between w-screen px-24">
                     <div className="right flex justify-start">
-                        <Image className="flex justify-end items-end left-0 h-[65vw] w-[38vw] object-cover" src={connect} alt="" height={100} width={100}/>
+                        <Image className="flex justify-end items-end left-0 h-[56vw] w-[38vw] object-cover" src={connect} alt="" height={100} width={100}/>
                     </div>
                     <div className="left flex flex-col justify-center items-start">
                         <div className="flex flex-col gap-2">
