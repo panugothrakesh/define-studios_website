@@ -8,7 +8,7 @@ export default function Home() {
   <>
     <div className="bg-white text-[#222222] flex flex-col justify-center items-center mx-auto w-full">
       <div>
-          <Image src={photo1} width={100} height={100} className="w-screen h-full" alt=" "/>
+          <Image src={photo1} width={100} height={100} className="w-screen h-full" alt="photo"/>
         </div>
           <p className="text-center font-haboro text-sm py-24 leading-loose tracking-wide">
             <Balancer>
