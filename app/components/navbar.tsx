@@ -47,9 +47,9 @@ export default function Navbar(){
     }
     return (
         <div className="border-b-2 bg-white border-b-[#EDEBE0]">
-        <div className="mx-auto text-[#222222] font-ponjoung flex w-screen max-w-7xl justify-between items-center px-4 py-10 text-xs">
+        <div className="mx-auto text-[#222222] font-ponjoung flex w-screen max-w-7xl justify-between items-center px-4 md:py-10 py-4 text-xs">
             <section className="flex items-center">
-                <Link href={"/"} ><Image src={logo} alt="Logo"/></Link>
+                <Link href={"/"} ><Image className=" w-4/5 md:w-full" width={512} height={512} src={logo} alt="Logo"/></Link>
             </section>
             <section ref={animationParent}>
                 {isSideMenuOpen && 
@@ -97,7 +97,7 @@ export default function Navbar(){
 function MobileNav({closeSideMenu}:{closeSideMenu:()=>void }){
     return (
         <div className="fixed z-20 left-0 top-0 flex h-full min-h-screen w-full justify-end bg-black/60 md:hidden">
-            <div className="h-full w-[75%] bg-white p-4">
+            <div className="h-full w-[75%] bg-white px-4 pt-6 pb-4">
                 <section className="flex justify-end">
                 <AiOutlineClose onClick={closeSideMenu} className="cursor-pointer text-4xl"/>
                 </section>
@@ -128,7 +128,7 @@ function SingleNavItem(d: NavItem){
     }
 
     return (
-        <div ref={animationParent} onClick={toggleItems} className="relative px-2 py-3 transition-all">
+        <div ref={animationParent} onClick={toggleItems} className="text-md relative px-2 py-3 transition-all">
                 <Link href={d.link ?? '#'} className={isActive(d.link) || (d.children && d.children.some(child => isActive(child.link))) ? 'text-[#3D7F64]':''}>
                     <p className="flex group-hover:text-[#3D7F64] cursor-pointer items-center gap-2 text-[#222222]">
                     <span>{d.label}</span>
