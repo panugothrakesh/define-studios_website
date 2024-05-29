@@ -25,12 +25,12 @@ export default function Expanded(){
                         </div>
                     </div>
                     <div className="right flex justify-end w-full">
-                        <Image className="justify-end items-end md:h-[56vw] h-full right-0 md:w-[38vw] w-full object-cover" src={portfolio} alt="photo" height={2400} width={1400} sizes="(max-width: 640px) 100vw, 25vw"/>
+                        <Image className="justify-end items-end md:h-[56vw] h-full right-0 md:w-[38vw] w-full object-cover" src={portfolio} alt="photo" height={2400} width={1400} sizes="(max-width: 640px) 100vw,(max-width: 1200px) 75vw, 50vw"/>
                     </div>
                 </div>
                 <div className="righttt flex flex-col-reverse md:flex-row justify-evenly w-screen md:px-24">
                     <div className="right flex justify-start w-full">
-                        <Image className="justify-end items-end md:h-[56vw] h-full right-0 md:w-[38vw] w-full object-cover" src={about} alt="photo" height={2600} width={1400} sizes="(max-width: 640px) 100vw, 25vw"/>
+                        <Image className="justify-end items-end md:h-[56vw] h-full right-0 md:w-[38vw] w-full object-cover" src={about} alt="photo" height={2600} width={1400} sizes="(max-width: 640px) 100vw,(max-width: 1200px) 75vw, 50vw"/>
                     </div>
                     <div className="right flex flex-col md:justify-center w-full items-center pb-5 md:pb-0 md:items-start">
                         <div className="flex md:flex-col gap-2">
@@ -51,12 +51,12 @@ export default function Expanded(){
                         </div>
                     </div>
                     <div className="right flex justify-end w-full">
-                        <Image className="justify-end items-end md:h-[56vw] h-full right-0 md:w-[38vw] w-full object-cover" src={press} alt="photo" height={2600} width={1400} sizes="(max-width: 640px) 100vw, 25vw"/>
+                        <Image className="justify-end items-end md:h-[56vw] h-full right-0 md:w-[38vw] w-full object-cover" src={press} alt="photo" height={2600} width={1400} sizes="(max-width: 640px) 100vw,(max-width: 1200px) 75vw, 50vw"/>
                     </div>
                 </div>
                 <div className="righttt flex flex-col-reverse md:flex-row justify-evenly w-screen md:px-24">
                     <div className="right flex justify-start w-full">
-                        <Image className="justify-end items-end md:h-[56vw] h-full right-0 md:w-[38vw] w-full object-cover" src={connect} alt="photo" height={2600} width={1400} sizes="(max-width: 640px) 100vw, 25vw"/>
+                        <Image className="justify-end items-end md:h-[56vw] h-full right-0 md:w-[38vw] w-full object-cover" src={connect} alt="photo" height={2600} width={1400} sizes="(max-width: 640px) 100vw,(max-width: 1200px) 75vw, 50vw"/>
                     </div>
                     <div className="right flex flex-col md:justify-center w-full items-center pb-5 md:pb-0 md:items-start">
                         <div className="flex md:flex-col gap-2">

@@ -46,7 +46,7 @@ export default function Navbar(){
         return currentPath ===  link;
     }
     return (
-        <div className="border-b-2 bg-white border-b-[#EDEBE0]">
+        <div className="bg-white fixed md:sticky">
         <div className="mx-auto text-[#222222] font-ponjoung flex w-screen max-w-7xl justify-between items-center px-4 md:py-10 py-4 text-xs">
             <section className="flex items-center">
                 <Link href={"/"} ><Image className=" w-4/5 md:w-full" width={512} height={512} src={logo} alt="Logo"/></Link>
@@ -99,7 +99,7 @@ function MobileNav({closeSideMenu}:{closeSideMenu:()=>void }){
         <div className="fixed z-20 left-0 top-0 flex h-full min-h-screen w-full justify-end bg-black/60 md:hidden">
             <div className="h-full w-[75%] bg-white px-4 pt-6 pb-4">
                 <section className="flex justify-end">
-                <AiOutlineClose onClick={closeSideMenu} className="cursor-pointer text-4xl"/>
+                    <AiOutlineClose onClick={closeSideMenu} className="cursor-pointer text-4xl"/>
                 </section>
                 <div className="flex flex-col text-base gap-2 transition-all">
                     {NavItems.map((d, i)=>
