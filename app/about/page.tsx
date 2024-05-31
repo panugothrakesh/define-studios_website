@@ -1,27 +1,32 @@
 import Image from "next/image"
-import leftphoto from "../assets/leftphoto.jpeg"
+import leftphoto from "../assets/leftphoto.png"
 import rightphoto from "../assets/rightphoto.jpeg"
 
 export default function Aboutus() {
     return (
-        <div className="bg-white text-[#222222] flex flex-col justify-center items-start px-4 max-w-7xl mx-auto">
-            <div className="md:py-24 py-12 flex flex-col gap-6">
+        <div className="bg-white text-[#222222] flex flex-col justify-center items-start px-4 max-w-5xl mx-auto md:pt-0 pt-16">
+            <div className="md:pt-16 pb-32 py-12 flex flex-col gap-6">
                 <h2 className="text-black font-ponjoung font-semibold text-2xl md:text-lg 2xl:text-2xl">Philosophy </h2>
-                <p className="font-haboro leading-loose text-black/40 tracking-widest">A plausible inspiration for the Legend of the Phoenix, the exquisite flamingo emanates functionality by standing on one leg, making it a symbol of beauty and balance. Late November marks the return of the unique bird to Bombay each year. It is impacted by various cultures and experiences from around the world, but retains its original style. Taking a cue from this remarkable bird, the brand Flamingo interacts with the world surrounding it and explores innovative ideas to create a lifestyle that fits you. A seed of thought lends an idea that helps a space or product come alive. It seeps into your subconscious and transforms your experience within it. The outcome helps us portray the inward significance of things, rather than restrict its effect to outward appearances.</p>
+                <p className="font-haboro text-sm leading-loose text-black/40 tracking-widest">
+                DEFINE Studio, a boutique architecture and interior design firm based in Hyderabad, is founded on the principle of people-centric design. With over eight years of experience, founders Srilakshmi and Mayuri champion an aesthetic that harmoniously blends functionality with timeless elegance. Their approach to design is both innovative and experimental, ensuring each project is distinct and reflective of its unique purpose and context.
+                <br />
+                <br />
+                The studio&apos;s methodology involves a rigorous process of brainstorming tailored to each project, allowing for a customized and thoughtful design journey. This meticulous process ensures that every space they create is vibrant, flamboyant, and offers a unique experience. The studio&apos;s dynamic portfolio includes over 25 ongoing projects in Hyderabad, Pune, Goa, and Lonavala, marking DEFINE Studio as a rapidly growing young practice in the design field.
+                    </p>
             </div>
             <div className="border-t-[1px] w-full border-black/30" />
-            <div className="md:py-36 py-12 flex flex-col gap-8 justify-between w-full">
+            <div className="md:py-32 py-12 flex flex-col gap-8 justify-between w-full">
             <h2 className="text-black font-ponjoung font-semibold text-2xl md:text-lg 2xl:text-2xl">About </h2>
                 <div className="flex gap-8 flex-col md:flex-row justify-between w-full">
                     <div className="md:w-1/2 flex flex-col gap-8">
-                        <Image className="justify-end items-end md:h-[60vw] h-full right-0 object-cover" src={leftphoto} alt="photo" height={2400} width={1400} sizes="(max-width: 640px) 100vw,(max-width: 1200px) 75vw, 50vw" />
-                        <h3 className="mt-4 text-base md:text-sm 2xl:text-xl font-ponjoung">ESHA PANDYA-CHOKSI</h3>
-                        <p className="font-haboro leading-loose text-black/40 tracking-widest">Before taking a plunge into the creative side, Esha Pandya-Choksi graduated with a BSc in Finance from The McIntire School of Commerce, University of Virginia, USA&apos;s top ranking public university. Her budding love for architecture, propelled her to take an architectural history elective in the university&apos;s architecture school, and serve as an architectural tour guide for the university campus, a UNESCO world heritage site. Post her studies, she worked in the Financial Services Advisory Practice at Ernst & Young in New York, before returning to her family&apos;s business, Kaishar Interiors, one of India&apos;s premier interior fit-out contracting companies. Here she rekindled her passion for spatial design, and enrolled into India&apos;s top ranking Rachana Sansad School of Interior Design, where she graduated at the head of her class. In 2011, she founded Flamingo Interiors with Aashni Pandya. Esha is also a visiting professor at Rachana Sansad School of Interior Design.</p>
+                        <Image className="justify-end items-end md:h-[45vw] h-full right-0 object-cover" src={leftphoto} alt="photo" height={2400} width={1400} sizes="(max-width: 640px) 100vw,(max-width: 1200px) 75vw, 50vw" />
+                        <h3 className="mt-4 text-base md:text-base 2xl:text-xl font-ponjoung">Mayuri Shinde-Dixit</h3>
+                        <p className="font-haboro leading-loose text-black/40 text-sm tracking-widest">Mayuri Shinde-Dixit is a multi-disciplinary designer with extensive experience of 10 years in Architecture and Interior Design. She holds an undergraduate degree in design from Sir JJ School of Architecture in Mumbai and a Master&apos;s degree in Interior Design from Florence Design Academy in Italy. Her education has equipped her with a deep understanding of design, further refined by her experiences studying, traveling, and working across Europe. This international exposure has honed her sharp eye for detail, making Europe an ideal backdrop for her professional evolution in the design field.</p>
                     </div>
                     <div className="md:w-1/2 flex flex-col gap-8">
-                        <Image className="justify-end items-end md:h-[60vw] h-full right-0 object-cover" src={rightphoto} alt="photo" height={2400} width={1400} sizes="(max-width: 640px) 100vw,(max-width: 1200px) 75vw, 50vw" />
-                        <h3 className="mt-4 text-base md:text-sm 2xl:text-xl font-ponjoung">AASHNI PANDYA-KUMAR</h3>
-                        <p className="font-haboro leading-loose text-black/40 tracking-widest">Aashni Pandya graduated at the head of her class from Academic Interior Design at Florence Design Academy, ranked 1st amongst the best Interior Design schools in the world. During her undergraduate studies in Finance and Business Management at H.R. College of Commerce and Economics, she started her first job at Harvard Business School. Her interest in the creative field was developed while she worked at the school as a Research Associate on a paper titled &ldquo;Introduction of Fashion Journalism in India&ldquo;. Post a short course in design marketing at Istituto Marangoni, London, she returned to pursue a freelance job at Vogue. After working at the magazine as a freelance photo editor in the Art Department, she moved to a French fashion luxury magazine, L&apos;Officiel, to become a fashion writer. Her natural affiliation towards creativity drove her to interior design. In 2011, she founded Studio Flamingo with Esha Pandya Choksi.</p>
+                        <Image className="justify-end items-end md:h-[45vw] h-full right-0 object-cover" src={rightphoto} alt="photo" height={2400} width={1400} sizes="(max-width: 640px) 100vw,(max-width: 1200px) 75vw, 50vw" />
+                        <h3 className="mt-4 text-base md:text-base 2xl:text-xl font-ponjoung">Srilakshmi Kukutlawar</h3>
+                        <p className="font-haboro leading-loose text-black/40 text-sm tracking-widest">Srilakshmi Kukutlawar is a dynamic designer with a strong foundation in design, studied at Sir JJ School of Architecture in Mumbai. Her background as an artist adds an extra dimension to her work, allowing her to infuse creativity and artistic flair into every project she undertakes. As an entrepreneurial leader, she brings a unique perspective to her role, overseeing a talented team of designers and contractors. Specializing in high-end residential architecture and interior design projects, she focuses on delivering luxury and quality craftsmanship to her clients. Her blend of artistic vision and leadership skills creates bespoke spaces that exceed expectations.</p>
                     </div>
                 </div>
             </div>

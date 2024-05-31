@@ -20,12 +20,12 @@ type NavItem = {
 
 const NavItems :NavItem[] =[
     {label:'PORTFOLIO', link:'', children:[{
-        label: "RESIDENTIAL",
-        link: "/our-gallery/residential",
+        label: "ARCHITECTURE",
+        link: "/our-gallery/architecture",
     },
     {
-        label: "COMMERCIAL",
-        link: "/our-gallery/commercial",
+        label: "INTERIOR",
+        link: "/our-gallery/interior",
     }]},
     {label:'ABOUT', link:'/about'},
     {label:'PRESS', link:'/press'},
@@ -68,7 +68,7 @@ export default function Navbar(){
 
                     {/* dropdown */}
                     {d.children && (
-                    <div className=" absolute right-0 top-8 hidden pt-[.125rem] w-auto flex-col gap-1 rounded-lg bg-none transition-all group-hover:flex">
+                    <div className=" absolute -right-2 top-8 hidden pt-[.125rem] w-auto flex-col gap-1 rounded-lg bg-none transition-all group-hover:flex">
                         {d.children.map((c, j)=>
                         <Link key={j} href={c.link ?? ''} className={`${(isActive(c.link)) ? 'text-black/50':''} flex cursor-pointer items-start py-1 pl-2 pr-4 text-[#222222] hover:text-black/50`}>
                             <span className="whitespace-nowrap">{c.label}</span>
