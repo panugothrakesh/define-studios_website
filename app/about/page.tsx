@@ -5,7 +5,7 @@ import rightphoto from "../assets/rightphoto.jpeg"
 export default function Aboutus() {
     return (
         <div className="bg-white text-[#222222] flex flex-col justify-center items-start px-4 max-w-5xl mx-auto md:pt-0 pt-16">
-            <div className="md:pt-16 pb-32 py-12 flex flex-col gap-6">
+            <div className="md:pt-16 md:pb-32 py-12 flex flex-col gap-6">
                 <h2 className="text-black font-ponjoung font-semibold text-2xl md:text-lg 2xl:text-2xl">Philosophy </h2>
                 <p className="font-haboro text-sm leading-loose text-black/40 tracking-widest">
                 DEFINE Studio, a boutique architecture and interior design firm based in Hyderabad, is founded on the principle of people-centric design. With over eight years of experience, founders Srilakshmi and Mayuri champion an aesthetic that harmoniously blends functionality with timeless elegance. Their approach to design is both innovative and experimental, ensuring each project is distinct and reflective of its unique purpose and context.
