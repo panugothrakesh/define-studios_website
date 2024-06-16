@@ -52,11 +52,11 @@ export default function Connect(){
                     <span className=" font-ponjoung">GET IN TOUCH</span>
                     <div className="grid grid-cols-2 gap-5 max-w-4xl w-full">
                     <div className="border-t-[1px] col-span-2 mb-7 border-black/30 flex flex-col justify-center items-center"></div>
-                        <div className='flex flex-col gap-1 text-base md:text-sm 2xl:text-xl font-haboro'>
+                        <div className='flex col-span-2 md:col-span-1 flex-col gap-1 text-base md:text-sm 2xl:text-xl font-haboro'>
                             <p className='text-black/50 tracking-wider'>First name <span className=' text-black/30 text-xs'>(required)</span></p>
                             <input type="text" className='bg-black/[2%] focus:outline-none text-sm leading-loose text-black tracking-widest border border-1 py-1 px-2'/>
                         </div>
-                        <div className='flex flex-col gap-1 text-base md:text-sm 2xl:text-xl font-haboro'>
+                        <div className='flex col-span-2 md:col-span-1 flex-col gap-1 text-base md:text-sm 2xl:text-xl font-haboro'>
                             <p className='text-black/50 tracking-wider'>Last name</p>
                             <input type="text" className='bg-black/[2%] focus:outline-none text-sm leading-loose text-black tracking-widest border border-1 py-1 px-2'/>
                         </div>

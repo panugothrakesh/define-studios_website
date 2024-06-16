@@ -1,25 +1,25 @@
 /** @format */
-"use client"
-import { usePathname } from "next/navigation"
-import Image from "next/image"
-import React, { useState, ReactNode } from "react"
-import logo from "../assets/logo.svg"
+"use client";
+import { usePathname } from "next/navigation";
+import Image from "next/image";
+import React, { useState, ReactNode } from "react";
+import logo from "../assets/logo.svg";
 import { IoIosArrowDown } from "react-icons/io";
 import { AiOutlineClose } from "react-icons/ai";
 import { FiMenu } from "react-icons/fi";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion";
 import Link from "next/link";
 
-import { useAutoAnimate } from '@formkit/auto-animate/react'
+import { useAutoAnimate } from '@formkit/auto-animate/react';
 
 type NavItem = {
     label: string;
     link?: string;
     children?: NavItem[];
-}
+};
 
-const NavItems :NavItem[] =[
-    {label:'PORTFOLIO', link:'', children:[{
+const NavItems: NavItem[] = [
+    { label: 'PORTFOLIO', link: '', children: [{
         label: "ARCHITECTURE",
         link: "/architecture",
     },
@@ -27,84 +27,89 @@ const NavItems :NavItem[] =[
         label: "INTERIOR",
         link: "/interior",
     }]},
-    {label:'ABOUT', link:'/about'},
-    {label:'PRESS', link:'/press'},
-]
+    { label: 'ABOUT', link: '/about' },
+    { label: 'PRESS', link: '/press' },
+];
 
-export default function Navbar(){
+export default function Navbar() {
     const currentPath = usePathname();
-    const [animationParent] = useAutoAnimate()
+    const [animationParent] = useAutoAnimate();
     const [isSideMenuOpen, setSideMenu] = useState(false);
-    function openSideMenu(){
+
+    function openSideMenu() {
         setSideMenu(true);
-    };
-    function closeSideMenu(){
-        setSideMenu(false)
     }
 
-    const isActive = (link: any) =>{
-        return currentPath ===  link;
+    function closeSideMenu() {
+        setSideMenu(false);
     }
+
+    const isActive = (link: string | undefined) => {
+        return currentPath === link;
+    };
+
     return (
         <div className="bg-white fixed md:sticky">
             <motion.div
-            initial="hello"
-            whileInView="visible"
-            viewport={{ once: true }}
-            transition={{ duration: .8, ease: [0, 0.71, 0.2, 1.01]}}
-            variants={{
-              visible: { opacity: 1, scale: 1 },
-              hello: { opacity: 0, scale: .9 }
-            }}
-            animate={{ opacity: 1 }}
+                initial="hello"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, ease: [0, 0.71, 0.2, 1.01] }}
+                variants={{
+                    visible: { opacity: 1, scale: 1 },
+                    hello: { opacity: 0, scale: 0.9 }
+                }}
+                animate={{ opacity: 1 }}
             >
-        <div className="mx-auto text-[#222222] font-ponjoung flex w-screen max-w-7xl justify-between items-center px-4 md:py-10 py-4 text-xs">
-            <section className="flex items-center">
-                <Link href={"/"} ><Image className=" w-4/5 md:w-full" width={512} height={512} src={logo} alt="Logo"/></Link>
-            </section>
-            <section ref={animationParent}>
-                {isSideMenuOpen && 
-                <MobileNav closeSideMenu={closeSideMenu}/>
-            }
-                <div className="hidden md:flex items-center gap-6 transition-all">
-                    {NavItems.map((d, i)=>
-                    <div key={i}  className="text-[#222222] relative group px-2 py-3 transition-all">
-                <Link href={d.link ?? ''} className={(isActive(d.link) || (d.children && d.children.some(child => isActive(child.link)))) ? 'text-black/50':''}>
-                    <p className="flex group-hover:hover:text-black/50 cursor-pointer items-center gap-2">
-                    <span>{d.label}</span>
-                    {d.children && (
-                    <IoIosArrowDown className='rotate-180 transition-all group-hover:rotate-0'/>)}
-                    </p>
-                    </Link>
+                <div className="mx-auto text-[#222222] font-ponjoung flex w-screen max-w-7xl justify-between items-center px-4 md:py-10 py-4 text-xs">
+                    <section className="flex items-center">
+                        <Link href={"/"}><Image className="w-4/5 md:w-full" width={512} height={512} src={logo} alt="Logo" /></Link>
+                    </section>
+                    <section ref={animationParent}>
+                        {isSideMenuOpen &&
+                            <MobileNav closeSideMenu={closeSideMenu} />
+                        }
+                        <div className="hidden md:flex items-center gap-6 transition-all">
+                            {NavItems.map((d, i) =>
+                                <div key={i} className="text-[#222222] relative group px-2 py-3 transition-all">
+                                    <Link href={d.link ?? ''} className={(isActive(d.link) || (d.children && d.children.some(child => isActive(child.link)))) ? 'text-black/50' : ''}>
+                                        <p className="flex group-hover:hover:text-black/50 cursor-pointer items-center gap-2">
+                                            <span>{d.label}</span>
+                                            {d.children && (
+                                                <IoIosArrowDown className='rotate-180 transition-all group-hover:rotate-0' />
+                                            )}
+                                        </p>
+                                    </Link>
 
-                    {/* dropdown */}
-                    {d.children && (
-                    <div className=" absolute -right-2 top-8 hidden pt-[.125rem] w-auto flex-col gap-1 rounded-lg bg-none transition-all group-hover:flex">
-                        {d.children.map((c, j)=>
-                        <Link key={j} href={c.link ?? ''} className={`${(isActive(c.link)) ? 'text-black/50':''} flex cursor-pointer items-start py-1 pl-2 pr-4 text-[#222222] hover:text-black/50`}>
-                            <span className="whitespace-nowrap">{c.label}</span>
+                                    {/* dropdown */}
+                                    {d.children && (
+                                        <div className="absolute -right-2 top-8 hidden pt-[.125rem] w-auto flex-col gap-1 rounded-lg bg-none transition-all group-hover:flex">
+                                            {d.children.map((c, j) =>
+                                                <Link key={j} href={c.link ?? ''} className={`${(isActive(c.link)) ? 'text-black/50' : ''} flex cursor-pointer items-start py-1 pl-2 pr-4 text-[#222222] hover:text-black/50`}>
+                                                    <span className="whitespace-nowrap">{c.label}</span>
+                                                </Link>
+                                            )}
+                                        </div>
+                                    )}
+                                </div>
+                            )}
+                        </div>
+
+                        <FiMenu onClick={openSideMenu} className="cursor-pointer md:hidden text-4xl" />
+                    </section>
+                    <div ref={animationParent} className="md:flex hidden">
+                        <Link href={'/connect'} className={`group ${(isActive('/connect')) ? 'text-black/50' : ''}`}>
+                            <p className="flex group-hover:hover:text-black/50 cursor-pointer items-center gap-2">
+                                <span>CONNECT</span>
+                            </p>
                         </Link>
-                        )}
                     </div>
-                    )}
                 </div>
-                )}
-                </div>
-
-                <FiMenu onClick={openSideMenu} className="cursor-pointer md:hidden text-4xl"/>
-            </section>
-            <div ref={animationParent} className="md:flex hidden">
-                <Link href={'/connect'} className={ `group ${(isActive('/connect')) ? 'text-black/50':''}`}>
-                        <p className="flex group-hover:hover:text-black/50 cursor-pointer items-center gap-2">
-                            <span>CONNECT</span>
-                        </p>
-                </Link>    
-            </div>
+            </motion.div>
         </div>
-        </motion.div>
-        </div>
-    )
+    );
 }
+
 type SingleNavItemProps = {
     label: string;
     link?: string;
@@ -142,12 +147,14 @@ function MobileNav({ closeSideMenu }: MobileNavProps) {
                             ))}
                         </SingleNavItem>
                     ))}
+                    <Link href={'/connect'} className="flex cursor-pointer items-center absolute bottom-24 text-[#222222] hover:text-black/50" onClick={handleLinkClick}>
+                    <button className='py-3 px-14 hover:bg-black bg-black/80 transition-all duration-200 text-white'>CONNECT</button>
+                    </Link>
                 </div>
             </div>
         </div>
     );
 }
-
 
 function SingleNavItem({ label, link, children, closeSideMenu }: SingleNavItemProps) {
     const currentPath = usePathname();
