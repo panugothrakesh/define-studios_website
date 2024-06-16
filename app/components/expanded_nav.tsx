@@ -1,5 +1,6 @@
-
+'use-client'
 import Image from "next/image"
+import {motion} from 'framer-motion'
 import Link from "next/link"
 import portfolio from "../assets/portfoliophoto.jpeg"
 import about from "../assets/aboutusphoto.jpeg"
@@ -9,7 +10,17 @@ import connect from "../assets/connectphoto.jpeg"
 export default function Expanded(){
     return(
         <>
-            <div className="flex flex-col gap-24">
+      <div className="flex flex-col gap-24">
+                <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: .8, ease: [0, 0.71, 0.2, 1.01]}}
+                variants={{
+                    visible: { opacity: 1, scale: 1 },
+                    hidden: { opacity: 0, scale: .8 }
+                }}
+                >
                 <div className="lefttt flex flex-col md:flex-row justify-between w-screen md:px-24">
                     <div className="left flex flex-col w-full md:justify-center md:items-end items-center pb-5 md:pb-0">
                         <div className="flex md:flex-col gap-2">
@@ -28,6 +39,18 @@ export default function Expanded(){
                         <Image className="justify-end items-end md:h-[56vw] h-full right-0 md:w-[38vw] w-full object-cover" src={portfolio} alt="photo" height={2400} width={1400} sizes="(max-width: 640px) 100vw,(max-width: 1200px) 75vw, 50vw"/>
                     </div>
                 </div>
+                </motion.div>
+                <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: .8, ease: [0, 0.71, 0.2, 1.01]}}
+                variants={{
+                    visible: { opacity: 1, scale: 1 },
+                    hidden: { opacity: 0, scale: .8 }
+                }}
+                animate={{ opacity: 1 }}
+                >
                 <div className="righttt flex flex-col-reverse md:flex-row justify-evenly w-screen md:px-24">
                     <div className="right flex justify-start w-full">
                         <Image className="justify-end items-end md:h-[56vw] h-full right-0 md:w-[38vw] w-full object-cover" src={about} alt="photo" height={2600} width={1400} sizes="(max-width: 640px) 100vw,(max-width: 1200px) 75vw, 50vw"/>
@@ -41,6 +64,18 @@ export default function Expanded(){
                         </div>
                     </div>
                 </div>
+                </motion.div>
+                <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: .8, ease: [0, 0.71, 0.2, 1.01]}}
+                variants={{
+                    visible: { opacity: 1, scale: 1 },
+                    hidden: { opacity: 0, scale: .8 }
+                }}
+                animate={{ opacity: 1 }}
+                >
                 <div className="lefttt flex flex-col md:flex-row justify-evenly w-screen md:px-24">
                     <div className="left flex flex-col w-full md:justify-center md:items-end items-center pb-5 md:pb-0">
                         <div className="flex md:flex-col gap-2">
@@ -54,6 +89,18 @@ export default function Expanded(){
                         <Image className="justify-end items-end md:h-[56vw] h-full right-0 md:w-[38vw] w-full object-cover" src={press} alt="photo" height={2600} width={1400} sizes="(max-width: 640px) 100vw,(max-width: 1200px) 75vw, 50vw"/>
                     </div>
                 </div>
+                </motion.div>
+                <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: .8, ease: [0, 0.71, 0.2, 1.01]}}
+                variants={{
+                    visible: { opacity: 1, scale: 1 },
+                    hidden: { opacity: 0, scale: .8 }
+                }}
+                animate={{ opacity: 1 }}
+                >
                 <div className="righttt flex flex-col-reverse md:flex-row justify-evenly w-screen md:px-24">
                     <div className="right flex justify-start w-full">
                         <Image className="justify-end items-end md:h-[56vw] h-full right-0 md:w-[38vw] w-full object-cover" src={connect} alt="photo" height={2600} width={1400} sizes="(max-width: 640px) 100vw,(max-width: 1200px) 75vw, 50vw"/>
@@ -67,6 +114,7 @@ export default function Expanded(){
                         </div>
                     </div>
                 </div>
+                </motion.div>
             </div>
         </>
     )
