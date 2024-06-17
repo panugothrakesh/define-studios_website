@@ -24,7 +24,7 @@ export default function Home() {
           height={1400}
           className="w-screen md:h-full h-[52vh] object-cover"
           alt="photo"
-          sizes="(max-width: 640px) 25vw,(max-width: 1200px) 66.66vw, 100vw"
+          sizes="(max-width: 640px) 100vw,(max-width: 1200px) 75vw, 50vw"
         />
       </motion.div>
       <motion.div

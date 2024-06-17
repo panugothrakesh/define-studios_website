@@ -36,7 +36,7 @@ export default function Expanded(){
                         </div>
                     </div>
                     <div className="right flex justify-end w-full">
-                        <Image className="justify-end items-end md:h-[56vw] h-full right-0 md:w-[38vw] w-full object-cover" src={portfolio} alt="photo" height={2400} width={1400} sizes="(max-width: 640px) 100vw,(max-width: 1200px) 75vw, 50vw"/>
+                        <Image className="justify-end items-end md:h-[56vw] h-full right-0 md:w-[38vw] w-full object-cover" src={portfolio} alt="photo" height={2600} width={1400} sizes="(max-width: 640px) 100vw,(max-width: 1200px) 75vw, 50vw"/>
                     </div>
                 </div>
                 </motion.div>

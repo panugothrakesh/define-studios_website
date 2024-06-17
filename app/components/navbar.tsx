@@ -49,7 +49,7 @@ export default function Navbar() {
     };
 
     return (
-        <div className="bg-white fixed md:sticky">
+        <div className="bg-white fixed md:sticky z-50">
             <motion.div
                 initial="hello"
                 whileInView="visible"
@@ -127,7 +127,7 @@ function MobileNav({ closeSideMenu }: MobileNavProps) {
     };
 
     return (
-        <div className="fixed z-20 left-0 top-0 flex h-full min-h-screen w-full justify-end bg-black/60 md:hidden">
+        <div className="fixed z-50 left-0 top-0 flex h-full min-h-screen w-full justify-end bg-black/60 md:hidden">
             <div className="h-full w-[75%] bg-white px-4 pt-6 pb-4">
                 <section className="flex justify-end">
                     <AiOutlineClose onClick={closeSideMenu} className="cursor-pointer text-4xl" />
@@ -176,7 +176,7 @@ function SingleNavItem({ label, link, children, closeSideMenu }: SingleNavItemPr
     };
 
     return (
-        <div ref={animationParent} onClick={toggleItems} className="text-md relative px-2 py-3 transition-all">
+        <div ref={animationParent} onClick={toggleItems} className="text-md z-50 relative px-2 py-3 transition-all">
             <Link href={link ?? '#'} className={isActive(link) ? 'text-black/50' : ''}>
                 <p className="flex group-hover:text-black/50 cursor-pointer items-center gap-2 text-[#222222]" onClick={handleClick}>
                     <span>{label}</span>
