@@ -7,7 +7,7 @@ import photo1 from '../app/assets/photo1.jpeg';
 
 export default function Home() {
   return (
-    <div className="bg-white text-[#222222] flex flex-col justify-center items-center mx-auto w-full md:pt-0 pt-[84px]">
+    <div className="bg-white text-[#222222] flex flex-col justify-center items-center mx-auto w-screen md:pt-0 pt-[84px]">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -22,7 +22,7 @@ export default function Home() {
           src={photo1}
           width={2500}
           height={1400}
-          className="w-screen md:h-full h-[52vh] object-cover"
+          className="w-screen md:h-full h-[80vw] object-cover"
           alt="photo"
           sizes="(max-width: 640px) 100vw,(max-width: 1200px) 75vw, 50vw"
         />
@@ -38,10 +38,10 @@ export default function Home() {
       }}
       animate={{ opacity: 1 }}
       >
-      <p className="text-center font-haboro md:py-24 py-14 tracking-widest leading-loose">
-        <Balancer>
+      <p className="text-center font-haboro md:py-24 py-14 tracking-widest leading-loose w-[80vw] md:w-full">
+        {/* <Balancer> */}
           At DEFINE, creations go beyond mere utility; we elevate everyday experiences to extraordinary levels. We create a lifestyle of luxury and beauty that is blended with functionality and technology.
-        </Balancer>
+        {/* </Balancer> */}
       </p>
       </motion.div>
         <Expanded />

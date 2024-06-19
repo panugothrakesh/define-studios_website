@@ -34,24 +34,23 @@ export default function Footer(){
           visible: { opacity: 1, scale: 1 },
           hidden: { opacity: 0, scale: .9 }
         }}
-        animate={{ opacity: 1 }}
         >
         <div className="bg-white border-t-[1px] border-black/30 flex flex-col justify-center items-center mt-14 pt-14 pb-20">
         <div className="mx-auto text-[#222222] font-haboro flex md:flex-row flex-col justify-between gap-10 md:gap-0 w-full max-w-7xl md:px-24 lg:px-24 xl:px-4 pt-4 pb-10 text-sm">
-            <div className="flex flex-col justify-center items-center gap-5">
+            <div className="flex flex-col justify-center items-center gap-5 w-full">
                 <span className=" font-ponjoung">FOLLOW</span>
                 <ul className="text-sx text-center flex flex-col gap-2">
                     <li>Facebook</li>
                     <li>Instagram</li>
                 </ul>
             </div>
-            <div className="flex flex-col justify-center items-center gap-5">
+            <div className="flex flex-col justify-center items-center gap-5 w-full">
                 <span className=" font-ponjoung">LOCATION</span>
                 <ul className="text-sx text-center leading-loose">
                     <li>Suma Building, Kavuri Hills, Madhapur,<br /> Hyderabad, Telangana 500033</li>
                 </ul>
             </div>
-            <div className="flex flex-col justify-center items-center gap-5">
+            <div className="flex flex-col justify-center items-center gap-5 w-full">
                 <span className=" font-ponjoung">CONTACT</span>
                 <ul className="text-sx text-center flex flex-col gap-2">
                     <li><Link href={''}>enquires@df9studios.com</Link></li>
