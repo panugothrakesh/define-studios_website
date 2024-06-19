@@ -169,6 +169,7 @@ export default function Connect() {
                   First name <span className="text-black/30 text-xs">(required)</span>
                 </p>
                 <input
+                    placeholder='Firstname'
                   name="firstname"
                   value={formData.firstname}
                   onChange={handleChange}
@@ -183,6 +184,7 @@ export default function Connect() {
               <div className="flex col-span-2 md:col-span-1 flex-col gap-1 text-base md:text-sm 2xl:text-xl font-haboro">
                 <p className="text-black/50 tracking-wider">Last name</p>
                 <input
+                placeholder='Lastname'
                   name="lastname"
                   value={formData.lastname}
                   onChange={handleChange}
@@ -195,6 +197,7 @@ export default function Connect() {
                   Email <span className="text-black/30 text-xs">(required)</span>
                 </p>
                 <input
+                placeholder='abcd@gmail.com'
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
@@ -211,6 +214,7 @@ export default function Connect() {
                 <div className="w-full flex items-center bg-black/[2%] focus:outline-none text-sm leading-loose text-black tracking-widest border border-1 py-1 px-2 gap-2">
                   <p className="text-black/50 tracking-widest">https://</p>
                   <input
+                  placeholder='your-site.com'
                     name="site"
                     value={formData.site}
                     onChange={handleChange}
@@ -224,6 +228,7 @@ export default function Connect() {
                   Phone <span className="text-black/30 text-xs">(required)</span>
                 </p>
                 <input
+                placeholder='XXXXX XXXXX'
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
@@ -238,6 +243,7 @@ export default function Connect() {
               <div className="flex flex-col gap-1 col-span-2 text-base md:text-sm 2xl:text-xl font-haboro">
                 <p className="text-black/50 tracking-wider">Message</p>
                 <textarea
+                placeholder='Type your message or query here..!'
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
