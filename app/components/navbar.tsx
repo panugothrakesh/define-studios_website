@@ -19,14 +19,15 @@ type NavItem = {
 };
 
 const NavItems: NavItem[] = [
-    { label: 'PORTFOLIO', link: '', children: [{
+    { label: 'PORTFOLIO', link: '', children: [
+        {
+            label: "INTERIOR",
+            link: "/interior",
+        },{
         label: "ARCHITECTURE",
         link: "/architecture",
-    },
-    {
-        label: "INTERIOR",
-        link: "/interior",
-    }]},
+    }
+    ]},
     { label: 'ABOUT', link: '/about' },
     { label: 'PRESS', link: '/press' },
 ];
