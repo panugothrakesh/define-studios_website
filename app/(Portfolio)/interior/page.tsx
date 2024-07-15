@@ -18,7 +18,7 @@ export default function Interior() {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
-                    transition={{ duration: .8, ease: [0, 0.71, 0.2, 1.01] }}
+                    transition={{ duration: 1.2, ease: [0, 0.71, 0.2, 1.01] }}
                     variants={{
                         visible: { opacity: 1, scale: 1 },
                         hidden: { opacity: 0, scale: .9 }
@@ -36,7 +36,7 @@ export default function Interior() {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                transition={{ duration: .8, ease: [0, 0.71, 0.2, 1.01]}}
+                transition={{ duration: 1.2, ease: [0, 0.71, 0.2, 1.01]}}
                 variants={{
                     visible: { opacity: 1, scale: 1 },
                     hidden: { opacity: 0, scale: .8 }
@@ -50,7 +50,7 @@ export default function Interior() {
                                 <div className="flex gap-2 md:hidden">
                                     <h3 className=" text-base md:text-sm 2xl:text-xl font-ebgaramond">01</h3>
                                 </div>
-                                <p><Link href={""} className="transition-all duration-100 hover:underline hover:underline-offset-2">DARSHAN</Link></p>
+                                <p><Link href="/interior/darshan" className="transition-all duration-100 hover:underline hover:underline-offset-2">DARSHAN</Link></p>
                             </div>
                         </div>
                     </div>
@@ -63,7 +63,7 @@ export default function Interior() {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                transition={{ duration: .8, ease: [0, 0.71, 0.2, 1.01]}}
+                transition={{ duration: 1.2, ease: [0, 0.71, 0.2, 1.01]}}
                 variants={{
                     visible: { opacity: 1, scale: 1 },
                     hidden: { opacity: 0, scale: .8 }
@@ -88,7 +88,7 @@ export default function Interior() {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                transition={{ duration: .8, ease: [0, 0.71, 0.2, 1.01]}}
+                transition={{ duration: 1.2, ease: [0, 0.71, 0.2, 1.01]}}
                 variants={{
                     visible: { opacity: 1, scale: 1 },
                     hidden: { opacity: 0, scale: .8 }
@@ -113,7 +113,7 @@ export default function Interior() {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                transition={{ duration: .8, ease: [0, 0.71, 0.2, 1.01]}}
+                transition={{ duration: 1.2, ease: [0, 0.71, 0.2, 1.01]}}
                 variants={{
                     visible: { opacity: 1, scale: 1 },
                     hidden: { opacity: 0, scale: .8 }
@@ -138,7 +138,7 @@ export default function Interior() {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                transition={{ duration: .8, ease: [0, 0.71, 0.2, 1.01]}}
+                transition={{ duration: 1.2, ease: [0, 0.71, 0.2, 1.01]}}
                 variants={{
                     visible: { opacity: 1, scale: 1 },
                     hidden: { opacity: 0, scale: .8 }

@@ -15,7 +15,7 @@ export default function Expanded(){
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                transition={{ duration: .8, ease: [0, 0.71, 0.2, 1.01]}}
+                transition={{ duration: 1.2, ease: [0, 0.71, 0.2, 1.01]}}
                 variants={{
                     visible: { opacity: 1, scale: 1 },
                     hidden: { opacity: 0, scale: .8 }
@@ -31,7 +31,7 @@ export default function Expanded(){
                                     <p>PORTFOLIO</p>
                                 </div>
                                 <p className="md:flex hidden">PORTFOLIO</p>
-                                <p><Link href={""} className="transition-all duration-100 hover:underline hover:underline-offset-2">RESIDENTIAL</Link> &nbsp;|&nbsp; <Link href={""} className="transition-all duration-100 hover:underline hover:underline-offset-2">COMMERCIAL</Link></p>
+                                <p><Link href="/architecture" className="transition-all duration-100 hover:underline hover:underline-offset-2">ARCHITECTURE</Link> &nbsp;|&nbsp; <Link href="/interior" className="transition-all duration-100 hover:underline hover:underline-offset-2">INTERIOR</Link></p>
                             </div>
                         </div>
                     </div>
@@ -44,7 +44,7 @@ export default function Expanded(){
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                transition={{ duration: .8, ease: [0, 0.71, 0.2, 1.01]}}
+                transition={{ duration: 1.2, ease: [0, 0.71, 0.2, 1.01]}}
                 variants={{
                     visible: { opacity: 1, scale: 1 },
                     hidden: { opacity: 0, scale: .8 }
@@ -59,7 +59,7 @@ export default function Expanded(){
                         <div className="flex md:flex-col gap-2">
                             <h3 className=" text-base md:text-sm 2xl:text-xl font-ebgaramond">02</h3>
                             <div className="text-lg 2xl:text-2xl flex flex-col gap-2 font-ponjoung">
-                                <p><Link href={""} className="transition-all duration-100 hover:underline hover:underline-offset-2">ABOUT</Link></p>
+                                <p><Link href="/about" className="transition-all duration-100 hover:underline hover:underline-offset-2">ABOUT</Link></p>
                             </div>
                         </div>
                     </div>
@@ -69,7 +69,7 @@ export default function Expanded(){
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                transition={{ duration: .8, ease: [0, 0.71, 0.2, 1.01]}}
+                transition={{ duration: 1.2, ease: [0, 0.71, 0.2, 1.01]}}
                 variants={{
                     visible: { opacity: 1, scale: 1 },
                     hidden: { opacity: 0, scale: .8 }
@@ -81,7 +81,7 @@ export default function Expanded(){
                         <div className="flex md:flex-col gap-2">
                             <h3 className=" text-base md:text-sm 2xl:text-xl font-ebgaramond">03</h3>
                             <div className="text-lg 2xl:text-2xl flex flex-col gap-2 font-ponjoung">
-                                <p><Link href={""} className="transition-all duration-100 hover:underline hover:underline-offset-2">PRESS</Link> </p>
+                                <p><Link href="/press" className="transition-all duration-100 hover:underline hover:underline-offset-2">PRESS</Link> </p>
                             </div>
                         </div>
                     </div>
@@ -94,7 +94,7 @@ export default function Expanded(){
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                transition={{ duration: .8, ease: [0, 0.71, 0.2, 1.01]}}
+                transition={{ duration: 1.2, ease: [0, 0.71, 0.2, 1.01]}}
                 variants={{
                     visible: { opacity: 1, scale: 1 },
                     hidden: { opacity: 0, scale: .8 }
@@ -109,7 +109,7 @@ export default function Expanded(){
                         <div className="flex md:flex-col gap-2">
                             <h3 className=" text-base md:text-sm 2xl:text-xl font-ebgaramond">04</h3>
                             <div className="text-lg 2xl:text-2xl flex flex-col gap-2 font-ponjoung">
-                                <p><Link href={""} className="transition-all duration-100 hover:underline hover:underline-offset-2">CONNECT</Link></p>
+                                <p><Link href="/connect" className="transition-all duration-100 hover:underline hover:underline-offset-2">CONNECT</Link></p>
                             </div>
                         </div>
                     </div>

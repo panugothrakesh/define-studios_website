@@ -12,7 +12,7 @@ export default function Home() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        transition={{ duration: .8, ease: [0, 0.71, 0.2, 1.01]}}
+        transition={{ duration: 1.2, ease: [0, 0.71, 0.2, 1.01]}}
         variants={{
             visible: { opacity: 1, scale: 1 },
             hidden: { opacity: 0, scale: .9 }
@@ -38,10 +38,10 @@ export default function Home() {
       }}
       animate={{ opacity: 1 }}
       >
-      <p className="text-center font-haboro md:py-24 py-14 tracking-widest leading-loose w-[80vw] md:w-full">
-        {/* <Balancer> */}
+      <p className="text-center font-haboro md:py-24 py-14 tracking-widest leading-loose">
+        <Balancer>
           At DEFINE, creations go beyond mere utility; we elevate everyday experiences to extraordinary levels. We create a lifestyle of luxury and beauty that is blended with functionality and technology.
-        {/* </Balancer> */}
+        </Balancer>
       </p>
       </motion.div>
         <Expanded />
