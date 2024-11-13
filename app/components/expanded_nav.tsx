@@ -2,10 +2,12 @@
 import Image from "next/image"
 import {motion} from 'framer-motion'
 import Link from "next/link"
-import portfolio from "../assets/portfoliophoto.jpeg"
-import about from "../assets/aboutusphoto.jpeg"
-import press from "../assets/pressphoto.jpeg"
-import connect from "../assets/connectphoto.jpeg"
+// import portfolio from "../assets/portfoliophoto.jpeg"
+// import about from "../assets/aboutusphoto.jpeg"
+// import press from "../assets/pressphoto.jpeg"
+import about from "../assets/about.jpg"
+import portfolio from "../assets/portfolio.jpg"
+import connect from "../assets/connect.jpg"
 
 export default function Expanded(){
     return(
@@ -40,7 +42,7 @@ export default function Expanded(){
                         </div>
                     </div>
                     <div className="right flex justify-end w-full">
-                        <Image className="justify-end items-end md:h-[56vw] h-[160vw] right-0 md:w-[38vw] w-full object-cover" src={portfolio} alt="photo" height={2600} width={1400} sizes="(max-width: 640px) 100vw,(max-width: 1200px) 75vw, 50vw"/>
+                        <Image className="justify-end items-end md:h-[56vw] h-[160vw] right-0 md:w-[38vw] w-full object-cover" src={portfolio} alt="photo" height={1300} width={700} sizes="(max-width: 640px) 100vw,(max-width: 1200px) 75vw, 50vw"/>
                     </div>
                 </div>
                 </motion.div>
@@ -57,7 +59,7 @@ export default function Expanded(){
                 >
                 <div className="righttt flex flex-col-reverse md:flex-row justify-evenly w-screen md:px-24">
                     <div className="right flex justify-start w-full">
-                        <Image className="justify-end items-end md:h-[56vw] h-[160vw] right-0 md:w-[38vw] w-full object-cover" src={about} alt="photo" height={2600} width={1400} sizes="(max-width: 640px) 100vw,(max-width: 1200px) 75vw, 50vw"/>
+                        <Image className="justify-end items-end md:h-[56vw] h-[160vw] right-0 md:w-[38vw] w-full object-cover" src={about} alt="photo" height={1300} width={700} sizes="(max-width: 640px) 100vw,(max-width: 1200px) 75vw, 50vw"/>
                     </div>
                     <div className="right flex flex-col md:justify-center w-full items-center pb-5 md:pb-0  pl-6 ld:pl-0 md:items-start">
                         <div className="flex md:flex-col gap-2">
@@ -90,7 +92,7 @@ export default function Expanded(){
                         </div>
                     </div>
                     <div className="right flex justify-end w-full">
-                        <Image className="justify-end items-end md:h-[56vw] h-[160vw] right-0 md:w-[38vw] w-full object-cover" src={press} alt="photo" height={2600} width={1400} sizes="(max-width: 640px) 100vw,(max-width: 1200px) 75vw, 50vw"/>
+                        <Image className="justify-end items-end md:h-[56vw] h-[160vw] right-0 md:w-[38vw] w-full object-cover" src={connect} alt="photo" height={1300} width={700} sizes="(max-width: 640px) 100vw,(max-width: 1200px) 75vw, 50vw"/>
                     </div>
                 </div>
                 </motion.div>
