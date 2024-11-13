@@ -2,7 +2,6 @@
 import {motion} from 'framer-motion'
 import { useState, useEffect, FormEvent } from 'react';
 import { useRouter } from 'next/navigation';
-import Confetti from 'react-confetti';
 import Image from 'next/image';
 import banner from '../assets/connectbanner.jpg';
 
@@ -105,7 +104,6 @@ export default function Connect() {
   return isSubmitted ? (
     <div>
       <h1 className="text-center font-semibold text-3xl">Thank you for your message!</h1>
-      <Confetti />
       {showRedirectMessage && (
         <p className="text-center text-sm mt-4 text-gray-600">
           Redirecting in {redirectTimer} seconds...

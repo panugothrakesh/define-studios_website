@@ -31,7 +31,11 @@ export default function Expanded(){
                                     <p>PORTFOLIO</p>
                                 </div>
                                 <p className="md:flex hidden">PORTFOLIO</p>
-                                <p><Link href="/architecture" className="transition-all duration-100 hover:underline hover:underline-offset-2">ARCHITECTURE</Link> &nbsp;|&nbsp; <Link href="/interior" className="transition-all duration-100 hover:underline hover:underline-offset-2">INTERIOR</Link></p>
+                                <p>
+                                    <Link href="/interior" className="transition-all duration-100 hover:underline hover:underline-offset-2">INTERIOR</Link>
+                                    &nbsp;|&nbsp;
+                                    <Link href="/architecture" className="transition-all duration-100 hover:underline hover:underline-offset-2">ARCHITECTURE</Link>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -81,37 +85,12 @@ export default function Expanded(){
                         <div className="flex md:flex-col gap-2">
                             <h3 className=" text-base md:text-sm 2xl:text-xl font-ebgaramond">03</h3>
                             <div className="text-lg 2xl:text-2xl flex flex-col gap-2 font-ponjoung">
-                                <p><Link href="/press" className="transition-all duration-100 hover:underline hover:underline-offset-2">PRESS</Link> </p>
+                                <p><Link href="/connect" className="transition-all duration-100 hover:underline hover:underline-offset-2">CONNECT</Link> </p>
                             </div>
                         </div>
                     </div>
                     <div className="right flex justify-end w-full">
                         <Image className="justify-end items-end md:h-[56vw] h-[160vw] right-0 md:w-[38vw] w-full object-cover" src={press} alt="photo" height={2600} width={1400} sizes="(max-width: 640px) 100vw,(max-width: 1200px) 75vw, 50vw"/>
-                    </div>
-                </div>
-                </motion.div>
-                <motion.div
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                transition={{ duration: 1.2, ease: [0, 0.71, 0.2, 1.01]}}
-                variants={{
-                    visible: { opacity: 1, scale: 1 },
-                    hidden: { opacity: 0, scale: .8 }
-                }}
-                animate={{ opacity: 1 }}
-                >
-                <div className="righttt flex flex-col-reverse md:flex-row justify-evenly w-screen md:px-24">
-                    <div className="right flex justify-start w-full">
-                        <Image className="justify-end items-end md:h-[56vw] h-[160vw] right-0 md:w-[38vw] w-full object-cover" src={connect} alt="photo" height={2600} width={1400} sizes="(max-width: 640px) 100vw,(max-width: 1200px) 75vw, 50vw"/>
-                    </div>
-                    <div className="right flex flex-col md:justify-center w-full items-center pb-5 md:pb-0  pl-6 ld:pl-0 md:items-start">
-                        <div className="flex md:flex-col gap-2">
-                            <h3 className=" text-base md:text-sm 2xl:text-xl font-ebgaramond">04</h3>
-                            <div className="text-lg 2xl:text-2xl flex flex-col gap-2 font-ponjoung">
-                                <p><Link href="/connect" className="transition-all duration-100 hover:underline hover:underline-offset-2">CONNECT</Link></p>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 </motion.div>

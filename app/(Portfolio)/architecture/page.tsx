@@ -14,23 +14,6 @@ export default function Architecture() {
     return (
         <>
             <div className="bg-white text-[#222222] flex flex-col justify-center items-center mx-auto w-screen md:pt-0 pt-[84px]">
-                <motion.div
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
-                    transition={{ duration: 1.2, ease: [0, 0.71, 0.2, 1.01] }}
-                    variants={{
-                        visible: { opacity: 1, scale: 1 },
-                        hidden: { opacity: 0, scale: .9 }
-                    }}
-                >
-                    <Image
-                        src={Banner}
-                        height={3200} width={1800} sizes="(max-width: 640px) 100vw,(max-width: 1200px) 75vw, 50vw"
-                        className="w-screen md:h-full h-[160vw] object-cover"
-                        alt="photo"
-                    />
-                </motion.div>
                 <div className="flex flex-col gap-24">
                 <motion.div
                 initial="hidden"

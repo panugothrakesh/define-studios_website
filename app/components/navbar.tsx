@@ -29,7 +29,6 @@ const NavItems: NavItem[] = [
     }
     ]},
     { label: 'ABOUT', link: '/about' },
-    { label: 'PRESS', link: '/press' },
 ];
 
 export default function Navbar() {
