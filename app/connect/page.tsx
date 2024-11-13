@@ -10,7 +10,6 @@ interface FormInputs {
   lastname: string;
   email: string;
   phone: string;
-  site: string;
   message: string;
 }
 
@@ -29,7 +28,6 @@ export default function Connect() {
     lastname: '',
     email: '',
     phone: '',
-    site: '',
     message: ''
   });
   const [errors, setErrors] = useState<Errors>({});
@@ -113,40 +111,6 @@ export default function Connect() {
   ) : (
     <>
       <div className="flex flex-col items-center justify-center w-screen md:px-24 px-12 gap-14">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          variants={{
-            visible: { opacity: 1, scale: 1 },
-            hidden: { opacity: 0, scale: 0.9 },
-          }}
-          className="top w-screen flex flex-col items-center justify-center mt-24 gap-10"
-        >
-          <span className="font-ponjoung">STAY UPDATED</span>
-          <div className='flex flex-col items-center justify-center w-screen md:px-24 px-12 gap-14'>
-          <div className="grid grid-cols-2 max-w-4xl w-full">
-              <div className="border-t-[1px] col-span-2 mb-7 border-black/30 flex flex-col justify-center items-center"></div>
-        </div>
-        </div>
-          <ul className="flex gap-4">
-            <li>Facebook</li>
-            <li>Instagram</li>
-            <li>Twitter</li>
-          </ul>
-          <div className="md:mx-6 mx-3 h-[30vw] flex justify-center items-center border-2 overflow-hidden">
-            <Image
-              src={banner}
-              width={2500}
-              height={1400}
-              className="w-screen object-cover"
-              alt="photo"
-              sizes="(max-width: 640px) 25vw,(max-width: 1200px) 66.66vw, 100vw"
-            />
-          </div>
-        </motion.div>
-
         <div className="w-full form flex justify-center items-center">
           <motion.div
             initial="hidden"
@@ -206,20 +170,6 @@ export default function Connect() {
                 {errors.email && (
                   <p className="text-red-500 text-xs mt-1">{errors.email}</p>
                 )}
-              </div>
-              <div className="flex flex-col gap-1 col-span-2 text-base md:text-sm 2xl:text-xl font-haboro">
-                <p className="text-black/50 tracking-wider">Website</p>
-                <div className="w-full flex items-center bg-black/[2%] focus:outline-none text-sm leading-loose text-black tracking-widest border border-1 py-1 px-2 gap-2">
-                  <p className="text-black/50 tracking-widest">https://</p>
-                  <input
-                  placeholder='your-site.com'
-                    name="site"
-                    value={formData.site}
-                    onChange={handleChange}
-                    type="text"
-                    className="bg-transparent focus:outline-none text-sm leading-loose text-black tracking-widest w-full"
-                  />
-                </div>
               </div>
               <div className="flex flex-col gap-1 col-span-2 text-base md:text-sm 2xl:text-xl font-haboro">
                 <p className="text-black/50 tracking-wider">

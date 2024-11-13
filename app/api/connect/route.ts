@@ -12,7 +12,7 @@ export async function POST(request: Request) {
   const mailgun = new Mailgun(FormData);
   const client = mailgun.client({ username: 'api', key: API_KEY });
 
-  const { firstname, lastname, email, site, phone, message } = body;
+  const { firstname, lastname, email, phone, message } = body;
 
   const messageData = {
     from: 'Contact Form <support@gleedesignstudio.com>',
@@ -24,7 +24,6 @@ export async function POST(request: Request) {
     
     Email id: ${email}
     Phone Number: ${phone}
-    Website: https://${site}
 
     Message: ${message}`,
   };
