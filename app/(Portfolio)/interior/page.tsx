@@ -4,9 +4,6 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from "next/link"
 import int1 from "../../assets/project1/LVNGRM_VIEW03.jpg"
-import int2 from "../../assets/project2/Bedroomside.jpeg"
-import int3 from "../../assets/project3/bedromfullangle.jpeg"
-import int4 from "../../assets/project4/useitforleft.jpeg"
 import int5 from "../../assets/project5/KOKAPET_OFC_01_03.jpg"
 
 export default function Interior() {
@@ -27,7 +24,7 @@ export default function Interior() {
                 >
                 <div className="righttt flex flex-col-reverse md:flex-row justify-evenly w-screen md:px-24">
                     <div className="right flex justify-start w-full">
-                        <Image className="md:h-[56vw] h-[160vw] md:w-[38vw] w-full object-cover object-[70%]" src={int2} alt="photo" height={2600} width={1400} sizes="(max-width: 640px) 100vw,(max-width: 1200px) 75vw, 50vw"/>
+                        <Image className="md:h-[56vw] h-[160vw] md:w-[38vw] w-full object-cover object-[0%]" src={"/countryhome/DSC01316.jpg"} alt="photo" height={5000} width={3000} sizes="(max-width: 640px) 50vw,(max-width: 1200px) 75vw, 100vw"/>
                     </div>
                     <div className="right flex flex-col md:justify-center w-full items-center pb-5 md:pb-0  pl-6 ld:pl-0 md:items-start">
                         <div className="flex md:flex-col gap-2 flex-col items-center  md:items-start">
