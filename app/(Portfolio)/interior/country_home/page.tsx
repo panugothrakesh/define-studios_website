@@ -21,27 +21,30 @@ export default function Country_Home() {
                 </div>
                 <div className="grid md:grid-cols-2 grid-cols-1 gap-8 w-screen md:px-12 ">
                     <Image
-                        src="/banner.jpg"
-                        width={2500}
+                        src="/countryhome/DSC01316.jpg"
+                        width={2400}
                         height={1400}
                         className="w-screen md:h-[120vh] object-cover md:col-span-2"
                         alt="photo"
-                        sizes="(max-width: 640px) 100vw,(max-width: 1200px) 75vw, 50vw"
+                        sizes="(max-width: 640px) 50vw,(max-width: 1200px) 75vw, 100vw"
                     />
-                    <Image className=" md:h-[120vh] h-[80vh] w-full object-cover object-[70%]" src="/p1.jpg" alt="photo" height={2600} width={1400} sizes="(max-width: 640px) 100vw,(max-width: 1200px) 75vw, 50vw" />
-                    <Image className=" md:h-[120vh] h-[80vh] w-full object-cover object-[10%]" src="/p2.jpg" alt="photo" height={2600} width={1400} sizes="(max-width: 640px) 100vw,(max-width: 1200px) 75vw, 50vw" />
+                    <Image className=" md:h-[120vh] h-[80vh] w-full object-cover object-[70%]" src="/countryhome/DSC01524.jpg" alt="photo" height={2600} width={1400} sizes="(max-width: 640px) 50vw,(max-width: 1200px) 75vw, 100vw" />
+                    <Image className=" md:h-[120vh] h-[80vh] w-full object-cover object-[10%]" src="/countryhome/DSC01596.jpg" alt="photo" height={2600} width={1400} sizes="(max-width: 640px) 50vw,(max-width: 1200px) 75vw, 100vw" />
                     
                     <Image
-                        src="/p3.jpg"
+                        src="/countryhome/DSC01302.jpg"
                         width={2500}
                         height={1400}
                         className="w-screen md:h-[120vh] object-cover md:col-span-2"
                         alt="photo"
-                        sizes="(max-width: 640px) 100vw,(max-width: 1200px) 75vw, 50vw"
+                        sizes="(max-width: 640px) 50vw,(max-width: 1200px) 75vw, 100vw"
                     />
 
-                    <Image className="md:h-[120vh] h-[80vh] w-full object-cover object-[50%]" src="/p4.jpg" alt="photo" height={2600} width={1400} sizes="(max-width: 640px) 100vw,(max-width: 1200px) 75vw, 50vw" />
-                    <Image className=" md:h-[120vh] h-[80vh] w-full object-cover object-[50%]" src="/p5.jpg" alt="photo" height={2600} width={1400} sizes="(max-width: 640px) 100vw,(max-width: 1200px) 75vw, 50vw" />
+                    <Image className="md:h-[120vh] h-[80vh] w-full object-cover object-[50%]" src="/countryhome/DSC01292.jpg" alt="photo" height={2600} width={1400} sizes="(max-width: 640px) 50vw,(max-width: 1200px) 75vw, 100vw" />
+                    <Image className=" md:h-[120vh] h-[80vh] w-full object-cover object-[50%]" src="/countryhome/DSC01168.jpg" alt="photo" height={2600} width={1400} sizes="(max-width: 640px) 50vw,(max-width: 1200px) 75vw, 100vw" />
+                    
+                    <Image className="md:h-[120vh] h-[80vh] w-full object-cover object-[50%]" src="/countryhome/DSC01192.jpg" alt="photo" height={2600} width={1400} sizes="(max-width: 640px) 50vw,(max-width: 1200px) 75vw, 100vw" />
+                    <Image className=" md:h-[120vh] h-[80vh] w-full object-cover object-[50%]" src="/countryhome/DSC01188.jpg" alt="photo" height={2600} width={1400} sizes="(max-width: 640px) 50vw,(max-width: 1200px) 75vw, 100vw" />
                 </div>
                 {/* <div className="Images">
                     <motion.div
@@ -60,7 +63,7 @@ export default function Country_Home() {
                             height={1400}
                             className="w-screen md:h-full h-[80vw] object-cover"
                             alt="photo"
-                            sizes="(max-width: 640px) 100vw,(max-width: 1200px) 75vw, 50vw"
+                            sizes="(max-width: 640px) 50vw,(max-width: 1200px) 75vw, 100vw"
                         />
                     </motion.div> */}
 
@@ -78,10 +81,10 @@ export default function Country_Home() {
                     >
                         <div className="righttt flex flex-col-reverse md:flex-row justify-evenly w-screen md:px-24">
                             <div className="right flex justify-start w-full">
-                                <Image className="md:h-[56vw] h-[160vw] md:w-[38vw] w-full object-cover object-[70%]" src="/p1.jpg" alt="photo" height={2600} width={1400} sizes="(max-width: 640px) 100vw,(max-width: 1200px) 75vw, 50vw" />
+                                <Image className="md:h-[56vw] h-[160vw] md:w-[38vw] w-full object-cover object-[70%]" src="/p1.jpg" alt="photo" height={2600} width={1400} sizes="(max-width: 640px) 50vw,(max-width: 1200px) 75vw, 100vw" />
                             </div>
                             <div className="right flex justify-start w-full">
-                                <Image className="md:h-[56vw] h-[160vw] md:w-[38vw] w-full object-cover object-[70%]" src="/p2.jpg" alt="photo" height={2600} width={1400} sizes="(max-width: 640px) 100vw,(max-width: 1200px) 75vw, 50vw" />
+                                <Image className="md:h-[56vw] h-[160vw] md:w-[38vw] w-full object-cover object-[70%]" src="/p2.jpg" alt="photo" height={2600} width={1400} sizes="(max-width: 640px) 50vw,(max-width: 1200px) 75vw, 100vw" />
                             </div>
                         </div>
                     </motion.div> */}
