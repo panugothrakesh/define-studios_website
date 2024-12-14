@@ -1,19 +1,19 @@
 'use client'
 
 import { motion } from 'framer-motion'
-// import Image from 'next/image'
-// import Link from "next/link"
-// import arc1 from "../../assets/arc1.jpeg"
-// import arc2 from "../../assets/arc2.jpg"
-// import arc3 from "../../assets/arc3.jpeg"
+import Image from 'next/image'
+import Banner from '../../assets/architecturebanner.jpeg'
+import Link from "next/link"
+import arc1 from "../../assets/arc1.jpeg"
+import arc2 from "../../assets/arc2.jpg"
+import arc3 from "../../assets/arc3.jpeg"
+import arc4 from "../../assets/arc4.jpeg"
+import arc5 from "../../assets/arc5.jpg"
 
 export default function Architecture() {
     return (
         <>
-            <div className="text-center h-[80vh] md:h-[60vh] font-semibold font-ponjoung text-4xl md:text-6xl flex flex-col justify-center items-center mx-auto w-screen">
-                <p className='bg-custom-gradient bg-[size:_1000%] bg-[-100%] animate-bg-position bg-clip-text text-transparent'>COMING SOON</p>
-            </div>
-            {/* <div className="bg-white text-[#222222] flex flex-col justify-center items-center mx-auto w-screen md:pt-0 pt-[84px]">
+            <div className="bg-white text-[#222222] flex flex-col justify-center items-center mx-auto w-screen md:pt-0 pt-[84px]">
                 <div className="flex flex-col gap-24">
                 <motion.div
                 initial="hidden"
@@ -93,7 +93,7 @@ export default function Architecture() {
                 </div>
                 </motion.div>
             </div>
-            </div> */}
+            </div>
         </>
     )
 }
